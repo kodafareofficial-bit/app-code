@@ -1,0 +1,17 @@
+# اجرای بک‌اند روی سرور:  docker compose up -d --build
+# قبلش فایل backend/.env را از backend/.env.example بسازید و مقدارها را پر کنید.
+services:
+  api:
+    build: ./backend
+    restart: unless-stopped
+    env_file: ./backend/.env
+    environment:
+      DATA_DIR: /data
+      PORT: "3000"
+    ports:
+      - "3000:3000"
+    volumes:
+      - codeoffer-data:/data
+
+volumes:
+  codeoffer-data:

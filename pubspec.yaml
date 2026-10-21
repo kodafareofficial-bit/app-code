@@ -1,0 +1,47 @@
+name: codeoffer
+description: اپلیکیشن کد آفر - Code Offer
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  http: ^1.2.2
+  shared_preferences: ^2.3.2
+  url_launcher: ^6.3.0
+  image_picker: ^1.1.2
+  path_provider: ^2.1.4
+  share_plus: ^10.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+  fonts:
+    - family: Vazirmatn
+      fonts:
+        - asset: assets/fonts/Vazirmatn-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Vazirmatn-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Vazirmatn-Bold.ttf
+          weight: 700
+
+# آیکن لانچر: فایل assets/logo.png را با لوگوی خودتان عوض کنید
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0F0B2E"
+  adaptive_icon_foreground: "assets/logo_foreground.png"

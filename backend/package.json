@@ -1,0 +1,12 @@
+{
+  "name": "codeoffer-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Code Offer API: users, OTP (ippanel), services, banners, notifications. Zero dependencies.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning test/smoke.js"
+  },
+  "engines": { "node": ">=22.13" }
+}
